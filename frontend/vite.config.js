@@ -6,18 +6,9 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {},
-    conditions: ["browser", "development", "production"],
   },
   optimizeDeps: {
-    exclude: ["@mediapipe/tasks-vision"],
-  },
-  ssr: {
-    noExternal: ["@mediapipe/tasks-vision"],
-  },
-  build: {
-    rolldownOptions: {
-      maxParallelFileOps: 20,
-    },
+    exclude: ["@mediapipe/tasks-vision", "@stream-io/video-react-sdk"],
   },
 });
 
