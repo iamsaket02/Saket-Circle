@@ -1,7 +1,7 @@
 import { CircleFadingPlus } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
-import useLogin from "../hooks/useLogin";
+import useLogin from "../hooks/useLogin.js";
 
 const LoginPage = () => {
   const [loginData, setLoginData] = useState({

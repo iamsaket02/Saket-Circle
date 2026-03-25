@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import userAuthUser from "../hooks/userAuthUser";
+import userAuthUser from "../hooks/userAuthUser.js";
 import { useQuery } from "@tanstack/react-query";
-import { getStreamToken } from "../lib/api";
+import { getStreamToken } from "../lib/api.js";
 import {
   StreamVideo,
   StreamVideoClient,
@@ -16,7 +16,7 @@ import {
 import { toast } from "react-hot-toast";
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
-import PageLoader from "../components/PageLoader";
+import PageLoader from "../components/PageLoader.jsx";
 
 const STREAM_API_KEY = import.meta.env.VITE_STREAM_API_KEY;
 

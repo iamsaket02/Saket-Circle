@@ -2,7 +2,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { CircleFadingPlus } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
-import { signup } from "../lib/api";
+import { signup } from "../lib/api.js";
 
 const SignUpPage = () => {
   const [signUpData, setSignUpData] = useState({

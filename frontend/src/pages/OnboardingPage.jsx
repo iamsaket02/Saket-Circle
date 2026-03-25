@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
-import userAuthUser from "../hooks/userAuthUser";
+import userAuthUser from "../hooks/userAuthUser.js";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { completeOnboarding, uploadProfilePic } from "../lib/api";
+import { completeOnboarding, uploadProfilePic } from "../lib/api.js";
 import { CameraIcon, CircleFadingPlus, LoaderIcon, Upload } from "lucide-react";
 import toast from "react-hot-toast";
 

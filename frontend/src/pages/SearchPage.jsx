@@ -3,11 +3,11 @@ import {
   getOutgoingFriendReqs,
   getSearchedUsers,
   sendFriendRequest,
-} from "../lib/api";
+} from "../lib/api.js";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { CheckCircleIcon, MapPinIcon, UserPlusIcon } from "lucide-react";
-import { Capitalize, capitalizeWords } from "../common/utils";
+import { Capitalize, capitalizeWords } from "../common/utils.js";
 
 const SearchPage = () => {
   const queryClient = useQueryClient();

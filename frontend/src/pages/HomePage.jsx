@@ -6,7 +6,7 @@ import {
   getRecommendedUsers,
   getUserFriends,
   sendFriendRequest,
-} from "../lib/api";
+} from "../lib/api.js";
 import { Link, useNavigate } from "react-router";
 import {
   CheckCircleIcon,
@@ -15,10 +15,10 @@ import {
   UserPlusIcon,
   UsersIcon,
 } from "lucide-react";
-import FriendCard from "../components/FriendCard";
-import NoFriendsFound from "../components/NoFriendsFound";
+import FriendCard from "../components/FriendCard.jsx";
+import NoFriendsFound from "../components/NoFriendsFound.jsx";
 import { toast } from "react-hot-toast";
-import { Capitalize, capitalizeWords } from "../common/utils";
+import { Capitalize, capitalizeWords } from "../common/utils.js";
 
 const HomePage = () => {
   const navigate = useNavigate();
