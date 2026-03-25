@@ -11,6 +11,14 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["@mediapipe/tasks-vision"],
   },
+  ssr: {
+    noExternal: ["@mediapipe/tasks-vision"],
+  },
+  build: {
+    rolldownOptions: {
+      maxParallelFileOps: 20,
+    },
+  },
 });
 
 // export default {
